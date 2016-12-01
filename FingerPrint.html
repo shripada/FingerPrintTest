@@ -2,12 +2,13 @@
 <html>
     <body>
         <p id="fp"></p>
-        <script src="FingerPrint.js"></script>
+        <script src="https://shripada.github.io/FingerPrintTest/FingerPrint.js"></script>
         <script>
             function generateBrowserFingerPrint() {
                 var fp = new Fingerprint2();
                 fp.get(function(result) {
                        location.href = result;
+                       alert(result)
                 });
             }
             generateBrowserFingerPrint();
