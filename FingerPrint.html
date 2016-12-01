@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="fp"></p>
+        <script src="FingerPrint.js"></script>
+        <script>
+            function generateBrowserFingerPrint() {
+                var fp = new Fingerprint2();
+                fp.get(function(result) {
+                       location.href = result;
+                });
+            }
+            generateBrowserFingerPrint();
+        </script>
+</body>
+</html>
