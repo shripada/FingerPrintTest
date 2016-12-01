@@ -97,7 +97,7 @@
       keys = this.timezoneOffsetKey(keys);
      /* keys = this.sessionStorageKey(keys);*/
       keys = this.localStorageKey(keys);
-      keys = this.indexedDbKey(keys);
+      /*keys = this.indexedDbKey(keys);*/
       keys = this.addBehaviorKey(keys);
       keys = this.openDatabaseKey(keys);
       keys = this.cpuClassKey(keys);
@@ -112,7 +112,7 @@
       keys = this.hasLiedOsKey(keys);
       keys = this.hasLiedBrowserKey(keys);
       keys = this.touchSupportKey(keys);
-        console.log(keys);
+        /*console.log(keys);*/
       var that = this;
       this.fontsKey(keys, function(newKeys){
         var values = [];
